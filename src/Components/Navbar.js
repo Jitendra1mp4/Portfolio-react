@@ -1,24 +1,20 @@
-
-function Navbar() {
-    const appName = "Texter"
-    return (
-        <nav id="navbar">
-            <div id="leftSideOfNav" className="navpart">
-                <ul className="navList">
-                    <li className="navItem" id="appName">{appName}</li>
-                    <li className="navItem">Home</li>
-                    <li className="navItem">About</li>
-                    <li className="navItem">Contact</li>
-                </ul>
-            </div>
-            <div id="RightSideOfNav" className="navpart">
-                <ul className="navList">
-                    <li className="navItem" id="search">About</li>
-                    <li className="navItem" id="searchBtn">Contact</li>
-                </ul>
-            </div>
-        </nav>
-    );
+function Navbar(props) {
+  return (
+    <nav className>
+      <span class="brand clr-light ta-left">{props.appName}</span>
+      <ul className="list-no-bullet">
+        {props.navPills.map((e) => {
+          return (
+            <li className="list-item-inline nav-pills">
+              <a className="link link-text-dec-none" href={`${e}`}>
+                {e}
+              </a>
+            </li>
+          );
+        })}
+      </ul>
+    </nav>
+  );
 }
 
 export default Navbar;
