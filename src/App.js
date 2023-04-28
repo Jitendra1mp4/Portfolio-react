@@ -11,10 +11,8 @@ import blogsImage from "./Images/blogs.svg";
 import projectsImage from "./Images/projects.svg";
 
 function App() {
-  const [mode, setMode] = useState("light");
-  const [headerImage, setHeaderImage] = useState(homeImage);
   const appName = "Jitendra Kumar";
-  const _navPills = [
+    const _navPills = [
     {
       value: "Home",
       link: "/home",
@@ -31,8 +29,29 @@ function App() {
       active: false,
     },
   ];
-  const [navPills, setNavPills] = useState(_navPills);
 
+  const headerTextList = [
+    () => (
+      <>
+        Hi, I am Jitendra a <span className="hero-name">Web-Developer</span>
+      </>
+    ),
+    () => (
+      <>
+        here my <span className="hero-name">Projects</span> are.
+      </>
+    ),
+    () => (
+      <>
+        My <span className="hero-name">Blogs </span>😍.
+      </>
+    ),
+  ];
+
+  const [mode, setMode] = useState("light");
+  const [navPills, setNavPills] = useState(_navPills);
+  const [headerImage, setHeaderImage] = useState(homeImage);
+  const [headerText, setHeaderText] = useState(headerTextList[0]());
   const setActiveLink = (link) => {
     let newNavPills = [...navPills];
     //set active link
@@ -57,6 +76,10 @@ function App() {
         break;
     }
   };
+  const setNewHeaderText = (index) => {
+    setHeaderText(headerTextList[index]());
+  };
+
   return (
     <React.Fragment>
       <Navbar
@@ -64,8 +87,10 @@ function App() {
         navPills={navPills}
         setLink={setActiveLink}
         setNewHeaderImage={setNewHeaderImage}
+        setNewHeaderText={setNewHeaderText}
       />
-      <Header headerImage={headerImage} />
+
+      <Header headerImage={headerImage} headerText={headerText} />
       <Main />
       <Footer />
     </React.Fragment>

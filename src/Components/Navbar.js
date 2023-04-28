@@ -1,7 +1,8 @@
 function Navbar(props) {
-  const updatePage =(link)=>{
+  const updatePage =(link,index)=>{
     props.setLink(link) ;
     props.setNewHeaderImage(link) ;
+    props.setNewHeaderText(index) ;
   }
   return (
     <nav>
@@ -13,7 +14,7 @@ function Navbar(props) {
               key={index}
               className={`list-item-inline nav-pills 
               ${navPillItem.active ? "link-active" : ""}`}
-              onClick={() => updatePage(navPillItem.link)}
+              onClick={() => updatePage(navPillItem.link,index)}
             >
               <a
                 className="link link-text-dec-none"
