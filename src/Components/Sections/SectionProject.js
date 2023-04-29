@@ -15,7 +15,7 @@ export default function SectionProject(props) {
           {props.btnPrimary.content}
         </a>
         <a
-          className="btn btn-secondary link-text-dec-none my-hf"
+          className="btn btn-secondary link-text-dec-none m-hf"
           href={props.btnSecondary.link}
         >
           {props.btnSecondary.content}
