@@ -1,7 +1,7 @@
 function Navbar(props) {
 
-  return (
-    <nav>
+  return (<>
+      <nav>
       <span className="brand clr-light">{props.appName}</span>
       <ul className="list-no-bullet">
         {props.navPills.map((navPillItem, index) => {
@@ -12,17 +12,18 @@ function Navbar(props) {
               ${navPillItem.active ? "link-active" : ""}`}
               onClick={() => props.updatePage(navPillItem.link,index)}
             >
-              <a
+              <span
                 className="link link-text-dec-none"
-                href={`${navPillItem.link}`}
+                // href={`${navPillItem.link}`}
               >
-              </a>
+              </span>
                 {navPillItem.value}
             </li>
           );
         })}
       </ul>
     </nav>
+     </>
   );
 }
 

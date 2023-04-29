@@ -1,9 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
 :root {
-  /* --color-primary: #22c55e; */
-  /* --color-secondary: rgb(255, 255, 255); */
-  /* --color-off-whit: rgb(230, 243, 249); */
-  /* --color-gray: #707070; */
+  --color-primary: #00b573;
+  --color-primary-dark: rgb(0, 47, 30);
+  --color-primary-light: rgb(206, 255, 237);
+  --color-secondary: rgb(255, 255, 255);
+  --color-off-whit: rgb(230, 243, 249);
+  --color-gray: #707070;
 
   --t-max-width: 280px;
 }
@@ -11,16 +13,16 @@
   box-sizing: border-box;
   margin: 0px;
   padding: 0px;
-  /* font-family: "Exo 2", sans-serif; */
+  font-family: "Exo 2", sans-serif;
   font-family: "Montserrat", sans-serif;
 }
 
-body {
+ body {
   font-family: "Montserrat", sans-serif;
   margin: 0px auto;
-  }
+} 
 .brand {
-  color: rgb(0, 0, 0);
+  color: var(--color-primary-light);
   font-weight: bolder;
   font-size: large;
   text-shadow: black 2px 2px 25px;
@@ -35,7 +37,7 @@ body {
 
 nav {
   background-color: var(--color-primary);
-  /* border-bottom-right-radius: 2rem; */
+  /* border-bottom-right-radius: 1rem; */
   padding: 1rem 2rem;
 }
 
@@ -55,7 +57,6 @@ nav .link {
 nav .link-active {
   padding-bottom: 2px;
   border-bottom: 2px solid var(--color-primary-light);
-  /* font-weight: bold; */
 }
 .list-item-inline {
   display: inline;
@@ -77,7 +78,7 @@ header .hero-img {
 .hero-text {
   max-width: var(--t-max-width);
   margin: auto;
-  padding-left: 0.2rem;
+  padding-left: 0.8rem;
   /* text-align: left; */
 }
 .hero-name {
@@ -87,7 +88,7 @@ section,
 article {
   padding: 2rem 1rem;
   border-radius: 1rem;
-  margin: 2rem 0.4rem;
+  margin: 2rem 1rem;
 }
 h2 {
   font-weight: bold;
@@ -96,6 +97,17 @@ section p {
   text-align: left;
   padding: 1rem 0.5rem;
 }
+
+section .btnContainer{
+  width: fit-content;
+  margin: 0.5rem auto;
+} 
+
+section .btn{
+  display: inline-block;
+  min-width: 8rem;
+}
+
 .container-section {
   padding: 1rem 0.5rem;
 }
@@ -154,8 +166,8 @@ section p {
 }
 
 footer {
-  background-color: var(--color-primary);
-  /* border-top-left-radius: 3rem; */
+  background-color: var(--color-primary-dark);
+  /* border-top-left-radius: 2rem; */
   padding: 2rem;
 }
 
@@ -165,9 +177,12 @@ div,
 li {
   text-align: center;
 }
+footer p {
+  color: var(--color-secondary);
+}
 
 footer .link-social {
-  color: rgb(0, 0, 0);
+  color: var(--color-primary-light);
   margin: 0px 0.1rem;
   font-weight: bolder;
 }

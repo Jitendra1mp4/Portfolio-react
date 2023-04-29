@@ -327,7 +327,6 @@ function App() {
   return (
     <React.Fragment>
       <Navbar appName={appName} navPills={navPills} updatePage={updatePage} />
-
       <Header headerImage={headerImage} headerText={headerText} />
       <Main updatePage={updatePage} currentPage={currentPage} sectionListArray={sectionListArray} />
       <Footer />
