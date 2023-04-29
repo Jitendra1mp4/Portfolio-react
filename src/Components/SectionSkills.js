@@ -1,6 +1,6 @@
 import React from 'react'
 
-export default function Section() {
+export default function SectionSkills() {
   return (
     <section className="section-off-white ">
     <div className="container-center container-section">
