@@ -1,4 +1,6 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+/* @import url('https://fonts.googleapis.com/css2?family=Poppins&family=Work+Sans&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Russo+One&family=Work+Sans&display=swap');
+
 :root {
   --color-primary: #00b573;
   --color-primary-dark: rgb(0, 47, 30);
@@ -13,15 +15,14 @@
   box-sizing: border-box;
   margin: 0px;
   padding: 0px;
-  font-family: "Exo 2", sans-serif;
-  font-family: "Montserrat", sans-serif;
 }
 
  body {
-  font-family: "Montserrat", sans-serif;
+  font-family: 'Poppins', sans-serif;
   margin: 0px auto;
 } 
 .brand {
+  font-family: 'Russo One','Work Sans', sans-serif;
   color: var(--color-primary-light);
   font-weight: bolder;
   font-size: large;
@@ -37,7 +38,6 @@
 
 nav {
   background-color: var(--color-primary);
-  /* border-bottom-right-radius: 1rem; */
   padding: 1rem 2rem;
 }
 
@@ -167,7 +167,6 @@ section .btn{
 
 footer {
   background-color: var(--color-primary-dark);
-  /* border-top-left-radius: 2rem; */
   padding: 2rem;
 }
 
