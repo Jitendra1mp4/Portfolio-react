@@ -24,7 +24,7 @@ body {
 .brand {
   font-family: "Russo One", "Work Sans", sans-serif;
   color: var(--color-primary-light);
-  font-weight: bolder;
+  /* font-weight: bold; */
   font-size: large;
   text-shadow: black 2px 2px 25px;
 }
