@@ -4,7 +4,7 @@ function Footer() {
     return (
       <footer className="container-fluid">
       <div className="container-center">
-        <div className="brand clr-light">Jitendra Kumar Sahu</div>
+        <span className="brand clr-light">Jitendra Kumar Sahu</span>
         <span className="my-1 clr-light d-block">
           Social Links
         </span>

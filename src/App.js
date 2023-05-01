@@ -52,7 +52,7 @@ function App() {
   const [navPills, setNavPills] = useState(_navPills);
   const [headerImage, setHeaderImage] = useState(homeImage);
   const [headerText, setHeaderText] = useState(headerTextList[0]());
-  const [currentPage,setCurrentPage] = useState("/home") ;
+  const [currentPage, setCurrentPage] = useState("/home");
   const setActiveLink = (link) => {
     // create copy of navPills array.
     let newNavPills = [...navPills];
@@ -82,12 +82,10 @@ function App() {
     setHeaderText(headerTextList[index]());
   };
   const updatePage = (link, index) => {
-    // console.log(link);
     setActiveLink(link);
-    setCurrentPage(link)
+    setCurrentPage(link);
     setNewHeaderImage(link);
     setNewHeaderText(index);
-    setSectionList(projectsSectionList);
   };
 
   const HomeSectionList = [
@@ -321,14 +319,21 @@ function App() {
     },
   ];
 
-  const sectionListArray = [HomeSectionList,projectsSectionList,blogsSectionList] ;
-  const [sectionList, setSectionList] = useState(HomeSectionList);
+  const sectionListArray = [
+    HomeSectionList,
+    projectsSectionList,
+    blogsSectionList,
+  ];
 
   return (
     <React.Fragment>
       <Navbar appName={appName} navPills={navPills} updatePage={updatePage} />
       <Header headerImage={headerImage} headerText={headerText} />
-      <Main updatePage={updatePage} currentPage={currentPage} sectionListArray={sectionListArray} />
+      <Main
+        updatePage={updatePage}
+        currentPage={currentPage}
+        sectionListArray={sectionListArray}
+      />
       <Footer />
     </React.Fragment>
   );
