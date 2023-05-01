@@ -38,7 +38,7 @@
 
 nav {
   background-color: var(--color-primary);
-  padding: 1rem 2rem;
+  padding: 1rem 10vw;
 }
 
 nav ul {
@@ -47,8 +47,9 @@ nav ul {
 }
 nav .nav-pills {
   color: white;
-  padding: 0.4rem 0.5;
-  margin: 0px 0.4rem;
+  padding: 0.4rem 0.5rem;
+  margin: 0px 0.7rem;
+  font-weight: bold;
 }
 
 nav .link {
@@ -86,6 +87,7 @@ header .hero-img {
 }
 section,
 article {
+  text-align: center;
   padding: 2rem 1rem;
   border-radius: 1rem;
   margin: 2rem 1rem;
@@ -93,7 +95,7 @@ article {
 h2 {
   font-weight: bold;
 }
-section p {
+section p, article p {
   text-align: left;
   padding: 1rem 0.5rem;
 }
@@ -168,14 +170,9 @@ section .btn{
 footer {
   background-color: var(--color-primary-dark);
   padding: 2rem;
-}
-
-footer ul,
-p,
-div,
-li {
   text-align: center;
 }
+
 footer p {
   color: var(--color-secondary);
 }
