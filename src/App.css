@@ -2,12 +2,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins&family=Russo+One&family=Work+Sans&display=swap');
 
 :root {
-  --color-primary: #00b573;
-  --color-primary-dark: rgb(0, 47, 30);
-  --color-primary-light: rgb(206, 255, 237);
+  --color-primary: #0ea5e9;
+  --color-primary-dark: #00354e;
+  --color-primary-light: #ccefff;
   --color-secondary: rgb(255, 255, 255);
   --color-off-whit: rgb(230, 243, 249);
-  --color-gray: #707070;
+  --color-gray: #94a3b8;
 
   --t-max-width: 280px;
 }
