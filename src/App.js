@@ -48,7 +48,7 @@ function App() {
     ),
   ];
 
-  const [mode, setMode] = useState("light");
+  // const [mode, setMode] = useState("light");
   const [navPills, setNavPills] = useState(_navPills);
   const [headerImage, setHeaderImage] = useState(homeImage);
   const [headerText, setHeaderText] = useState(headerTextList[0]());
@@ -75,6 +75,9 @@ function App() {
 
       case "/projects":
         setHeaderImage(projectsImage);
+        break;
+      default:
+        setHeaderImage(homeImage);
         break;
     }
   };
