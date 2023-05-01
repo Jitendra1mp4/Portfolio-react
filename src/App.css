@@ -1,5 +1,5 @@
 /* @import url('https://fonts.googleapis.com/css2?family=Poppins&family=Work+Sans&display=swap'); */
-@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Russo+One&family=Work+Sans&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins&family=Russo+One&family=Work+Sans&display=swap");
 
 :root {
   --color-primary: #0ea5e9;
@@ -17,12 +17,12 @@
   padding: 0px;
 }
 
- body {
-  font-family: 'Poppins', sans-serif;
+body {
+  font-family: "Poppins", sans-serif;
   margin: 0px auto;
-} 
+}
 .brand {
-  font-family: 'Russo One','Work Sans', sans-serif;
+  font-family: "Russo One", "Work Sans", sans-serif;
   color: var(--color-primary-light);
   font-weight: bolder;
   font-size: large;
@@ -68,20 +68,21 @@ nav .link-active {
 
 header {
   display: block;
+  margin: 2rem auto;
+  max-width: 600px;
+  text-align: center;
 }
 
-header .hero-img {
-  display: block;
+header .hero-img , header .hero-text{
+  display: inline-block;
   max-width: var(--t-max-width);
-  margin: 2rem auto;
+  padding-left: 0.8rem;
 }
 
 .hero-text {
-  max-width: var(--t-max-width);
-  margin: auto;
-  padding-left: 0.8rem;
-  /* text-align: left; */
+  text-align: left;
 }
+
 .hero-name {
   color: var(--color-primary);
 }
@@ -95,17 +96,18 @@ article {
 h2 {
   font-weight: bold;
 }
-section p, article p {
+section p,
+article p {
   text-align: left;
   padding: 1rem 0.5rem;
 }
 
-section .btnContainer{
+section .btnContainer {
   width: fit-content;
   margin: 0.5rem auto;
-} 
+}
 
-section .btn{
+section .btn {
   display: inline-block;
   min-width: 8rem;
 }
