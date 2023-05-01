@@ -1,7 +1,7 @@
 function Navbar(props) {
   return (
     <>
-      <nav>
+      <nav id="navbar">
         <span className="brand clr-light">{props.appName}</span>
         <ul className="list-no-bullet">
           {props.navPills.map((navPillItem, index) => {
