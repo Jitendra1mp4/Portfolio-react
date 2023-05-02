@@ -12,9 +12,9 @@ function Navbar(props) {
               ${navPillItem.active ? "link-active" : ""}`}
                 onClick={() => props.updatePage(navPillItem.link, index)}
               >
-                <span
+                <span 
                   className="link link-text-dec-none"
-                  // href={`${navPillItem.link}`}
+                  id={`${navPillItem.link.slice(1)}`}
                 >
                   {navPillItem.value}
                 </span>
