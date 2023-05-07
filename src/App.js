@@ -305,19 +305,19 @@ function App() {
 
   const blogsSectionList = [
     {
-      sectionHeading: "My Random Dummy Blog",
+      sectionHeading: "How update last or older git commit message.",
       sectionPara:
-        "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum enim vitae doloribus! Incidunt excepturi a et nemo consequatur architecto odit?Lorem, ipsum dolor sit amet consectetur adipisicing elit. Omnis hic ducimus est iure excepturi expedita!",
+        "Many times we need to update our previous commit message because of some reason. based on which commit it was it can be done in two ways...",
       sectionBtn: {
         primary: {
           content: "Read More",
-          link: "/projects",
+          link: "https://jit2endra.hashnode.dev/how-update-last-or-older-git-commit-message",
         },
       },
       date: {
-        day: "",
-        month: "",
-        year: "",
+        day: "4",
+        month: "5",
+        year: "2023"
       },
     },
   ];
