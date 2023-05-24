@@ -14,7 +14,7 @@ export default function SectionHome(props) {
         <a
           className={`btn btn-${props.index === 0 ? "primary" : "secondary"} link-text-dec-none`}
           href={`#${getLink().slice(1)}`}
-          onClick={() => props.updatePage(getLink(), props.index + 1)}
+          onClick={() => props.updatePage(getLink())}
         >
           {props.btnPrimary.content}
         </a>

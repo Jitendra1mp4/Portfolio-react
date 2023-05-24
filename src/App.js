@@ -84,7 +84,7 @@ function App() {
   const setNewHeaderText = (link) => {
     setHeaderText(headerTextList[link]());
   };
-  const updatePage = (link, index) => {
+  const updatePage = (link) => {
     setActiveLink(link);
     setCurrentPage(link);
     setNewHeaderImage(link);
