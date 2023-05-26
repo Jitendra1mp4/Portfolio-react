@@ -5,7 +5,9 @@ export default function BtnPrimary(props) {
     <a
       className="btn btn-secondary link-text-dec-none"
       href={props.link}
-      onClick={() => props.handleClick()}
+      onClick={() =>
+        props.handleClick !== undefined ? props.handleClick() : undefined
+      }
     >
       {props.content}
     </a>
