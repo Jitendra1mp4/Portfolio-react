@@ -1,6 +1,6 @@
 import React from "react";
 
-export default function BtnPrimary(props) {
+export default function BtnSecondary(props) {
   return (
     <a
       className="btn btn-secondary link-text-dec-none"
