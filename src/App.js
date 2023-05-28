@@ -293,11 +293,11 @@ function App() {
       sectionBtn: {
         primary: {
           content: "Download",
-          link: "https://ansjite.000webhostapp.com/Survay/",
+          link: "https://github.com/Jitendra1mp4/ChikMiki/releases/",
         },
         secondary: {
           content: "See source code",
-          link: "https://github.com/Jitendra1mp4/survay",
+          link: "https://github.com/Jitendra1mp4/ChikMiki",
         },
       },
     },
