@@ -1,5 +1,5 @@
 import React from "react";
-
+import BtnPrimary from "../Buttons/BtnPrimary.js";
 export default function articleBlog(props) {
   return (
     <article
@@ -8,12 +8,10 @@ export default function articleBlog(props) {
       <div className="container-center">
         <h2>{props.heading}</h2>
         <p>{props.para}</p>
-        <a
-          className="btn btn-primary link-text-dec-none"
-          href={props.btnPrimary.link}
-        >
-          {props.btnPrimary.content}
-        </a>
+        <BtnPrimary
+          link={props.btnPrimary.link}
+          content={props.btnPrimary.content}
+        />
       </div>
     </article>
   );
