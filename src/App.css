@@ -6,7 +6,7 @@
   --color-primary-dark: #00354e;
   --color-primary-light: #ccefff;
   --color-secondary: rgb(255, 255, 255);
-  --color-off-whit: rgb(230, 243, 249);
+  --color-off-primary: rgb(230, 243, 249);
   --color-gray: #94a3b8;
 
   --t-max-width: 280px;
@@ -77,6 +77,7 @@ header .hero-img , header .hero-text{
   display: inline-block;
   max-width: var(--t-max-width);
   padding-left: 0.8rem;
+  color: var(--color-primary-dark) ;
 }
 
 .hero-text {
@@ -117,9 +118,11 @@ section .btn {
 }
 .antique-light {
   background-color: rgb(255, 246, 235);
+  color: rgb(38, 21, 0);
 }
 .section-off-white {
-  background-color: var(--color-off-whit);
+  background-color: var(--color-off-primary);
+  color: var(--color-primary-dark);
 }
 
 .spn-skills {
