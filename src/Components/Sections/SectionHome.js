@@ -1,7 +1,28 @@
 import React from "react";
-
+import BtnPrimary from "../Buttons/BtnPrimary";
+import BtnSecondary from "../Buttons/BtnSecondary";
 export default function SectionHome(props) {
   const getLink = () => (props.index === 0 ? "/projects" : "/blogs");
+  const switchPage = () => props.updatePage(getLink());
+  const setBtn = () => {
+    if (getLink() === "/projects") {
+      return (
+        <BtnPrimary
+          link={`#${getLink().slice(1)}`}
+          handleClick={switchPage}
+          content={props.btnPrimary.content}
+        />
+      );
+    } else {
+      return (
+        <BtnSecondary
+          link={`#${getLink().slice(1)}`}
+          handleClick={switchPage}
+          content={props.btnPrimary.content}
+        />
+      );
+    }
+  };
 
   return (
     <section
@@ -10,14 +31,7 @@ export default function SectionHome(props) {
       <div className="container-center">
         <h2>{props.heading}</h2>
         <p>{props.para}</p>
-
-        <a
-          className={`btn btn-${props.index === 0 ? "primary" : "secondary"} link-text-dec-none`}
-          href="#navbar"
-          onClick={() => props.updatePage(getLink(), props.index + 1)}
-        >
-          {props.btnPrimary.content}
-        </a>
+        {setBtn()}
       </div>
     </section>
   );

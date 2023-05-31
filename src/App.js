@@ -30,28 +30,28 @@ function App() {
     },
   ];
 
-  const headerTextList = [
-    () => (
+  const headerTextList = {
+    "/home": () => (
       <>
         Hi, I am Jitendra a <span className="hero-name">Web-Developer</span>
       </>
     ),
-    () => (
+    "/projects": () => (
       <>
         here my <span className="hero-name">Projects</span> are.
       </>
     ),
-    () => (
+    "/blogs": () => (
       <>
         My <span className="hero-name">Blogs </span>😍.
       </>
     ),
-  ];
+  };
 
   // const [mode, setMode] = useState("light");
   const [navPills, setNavPills] = useState(_navPills);
   const [headerImage, setHeaderImage] = useState(homeImage);
-  const [headerText, setHeaderText] = useState(headerTextList[0]());
+  const [headerText, setHeaderText] = useState(headerTextList["/home"]());
   const [currentPage, setCurrentPage] = useState("/home");
   const setActiveLink = (link) => {
     // create copy of navPills array.
@@ -81,14 +81,14 @@ function App() {
         break;
     }
   };
-  const setNewHeaderText = (index) => {
-    setHeaderText(headerTextList[index]());
+  const setNewHeaderText = (link) => {
+    setHeaderText(headerTextList[link]());
   };
-  const updatePage = (link, index) => {
+  const updatePage = (link) => {
     setActiveLink(link);
     setCurrentPage(link);
     setNewHeaderImage(link);
-    setNewHeaderText(index);
+    setNewHeaderText(link);
   };
 
   const HomeSectionList = [
@@ -293,11 +293,11 @@ function App() {
       sectionBtn: {
         primary: {
           content: "Download",
-          link: "https://ansjite.000webhostapp.com/Survay/",
+          link: "https://github.com/Jitendra1mp4/ChikMiki/releases/",
         },
         secondary: {
           content: "See source code",
-          link: "https://github.com/Jitendra1mp4/survay",
+          link: "https://github.com/Jitendra1mp4/ChikMiki",
         },
       },
     },
@@ -317,7 +317,7 @@ function App() {
       date: {
         day: "4",
         month: "5",
-        year: "2023"
+        year: "2023",
       },
     },
   ];

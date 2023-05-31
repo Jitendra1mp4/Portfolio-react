@@ -1,4 +1,6 @@
 import React from "react";
+import BtnPrimary from "../Buttons/BtnPrimary";
+import BtnSecondary from "../Buttons/BtnSecondary";
 
 export default function SectionProject(props) {
   return (
@@ -8,18 +10,16 @@ export default function SectionProject(props) {
       <div className="container-center">
         <h2>{props.heading}</h2>
         <p>{props.para}</p>
-        <a
-          className="btn btn-primary link-text-dec-none"
-          href={props.btnPrimary.link}
-        >
-          {props.btnPrimary.content}
-        </a>
-        <a
-          className="btn btn-secondary link-text-dec-none m-hf"
-          href={props.btnSecondary.link}
-        >
-          {props.btnSecondary.content}
-        </a>
+        <BtnPrimary
+          link={props.btnPrimary.link}
+          content={props.btnPrimary.content}
+        />
+        <span className="m-hf">
+          <BtnSecondary
+            link={props.btnSecondary.link}
+            content={props.btnSecondary.content}
+          />
+        </span>
       </div>
     </section>
   );

@@ -10,11 +10,11 @@ function Navbar(props) {
                 key={index}
                 className={`list-item-inline nav-pills 
               ${navPillItem.active ? "link-active" : ""}`}
-                onClick={() => props.updatePage(navPillItem.link, index)}
+                onClick={() => props.updatePage(navPillItem.link)}
               >
-                <span
+                <span 
                   className="link link-text-dec-none"
-                  // href={`${navPillItem.link}`}
+                  id={`${navPillItem.link.slice(1)}`}
                 >
                   {navPillItem.value}
                 </span>
